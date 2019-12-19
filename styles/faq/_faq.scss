@@ -1,0 +1,86 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    text-align: center;
+    margin: 2em;
+    font-size: 36px;
+    font-weight: 800;
+    color: $color--complement-1;
+  }
+}
+
+.faq-wrapper {
+  display: grid;
+  max-width: 1600px;
+  gap: 2em;
+
+  @media (min-width: 1100px) {
+    grid-template: 1fr 1fr 1fr / 1fr 2fr;
+  }
+
+  .first-faq {
+    @media (min-width: 1100px) {
+      grid-row: span 2;
+    }
+  }
+
+  .last-faq {
+    clip-path: inset(-20px 0px 0px 0px);
+    @media (min-width: 1100px) {
+      grid-column: span 2;
+    }
+  }
+}
+
+.faq-textbox {
+  margin: 1.5rem;
+  @include justify-align-self(center, center);
+  @media (min-width: 500px) {
+    margin: 3rem;
+  }
+}
+
+.article-list {
+  color: $color--complement-3;
+
+  .list-content {
+    color: $color--main-font;
+  }
+}
+
+.faq-article {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $color--complement-3;
+  }
+}
+
+.article-grid {
+  display: grid;
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  .image-wrapper {
+    min-height: 450px;
+
+    @media (min-width: 600px) {
+      grid-column: 2 / 3;
+    }
+  }
+
+  .faq-textbox {
+    @media (min-width: 600px) {
+      grid-row: 1;
+    }
+  }
+}

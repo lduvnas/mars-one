@@ -1,0 +1,19 @@
+/*General*/
+@import "./variables";
+@import "./mixins";
+@import "./main";
+@import "./header";
+@import "./footer";
+@import "./main_nav";
+
+/*Page 1*/
+@import "./start/about";
+@import "./start/article-container";
+
+/*Page 2*/
+@import "./faq/faq";
+@import "./faq/planets";
+
+/*Page 3*/
+@import "./contact/join";
+@import "./contact/header-join";

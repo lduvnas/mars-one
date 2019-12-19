@@ -1,0 +1,71 @@
+.header-contact {
+  background-image: radial-gradient(rgba(193, 85, 85, 0.5), rgb(36, 2, 2)),
+    url("/images/page-3/hero-3.jpg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 760px;
+}
+
+.header-contact {
+  &:before,
+  &:after {
+    position: absolute;
+    background: rgba(59, 106, 168, 0.705);
+    max-height: 960px;
+    min-height: 765px;
+    min-width: 130%;
+    clip-path: ellipse(79.2% 55.07% at 39.24% 40.83%);
+    transform: rotate(185deg);
+    left: -60px;
+    bottom: -260px;
+    transition: all 250ms ease-in-out;
+    content: "";
+    @media (min-width: 900px) {
+      min-width: 110%;
+      max-height: 940px;
+      clip-path: ellipse(66% 74% at 65.49% 23.67%);
+      transform: rotate(190deg);
+    }
+  }
+
+  &:after {
+    background: linear-gradient(182deg, #00132c 31%, rgba(21, 52, 98, 0.9));
+    min-height: 750px;
+    left: -70px;
+    bottom: -270px;
+  }
+}
+
+.header-text-contact {
+  text-align: center;
+  align-self: center;
+  margin: 4rem 15px;
+  max-width: 400px;
+  z-index: 1;
+  @media (min-width: 900px) {
+    text-align: left;
+    align-self: flex-start;
+    max-width: 500px;
+    margin: 5rem;
+  }
+
+  h1 {
+    color: $color--complement-2;
+    font-size: 45px;
+    margin-bottom: 15px;
+    @media (min-width: 900px) {
+      font-size: 60px;
+    }
+  }
+
+  h2 {
+    color: $color--complement-4;
+    margin-top: 0;
+    font-size: 30px;
+    @media (min-width: 900px) {
+      font-size: 40px;
+    }
+  }
+}

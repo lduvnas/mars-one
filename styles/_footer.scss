@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @include justify-align-content(center, center);
+  background-color: $color--complement-1;
+  bottom: 0;
+  min-height: 300px;
+  padding-top: 10px;
+
+  h2 {
+    color: $color--complement-2;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  p {
+    text-align: center;
+    color: $color--complement-2;
+    font-size: 12px;
+    letter-spacing: 0.44px;
+  }
+
+  strong {
+    color: #f97c7c;
+  }
+}

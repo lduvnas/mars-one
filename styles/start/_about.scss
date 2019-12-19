@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-rows: auto auto;
+  background: $color--complement-2;
+  max-height: 1000px;
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-textbox {
+    margin: 4rem 2rem;
+    @include justify-align-self(center, center);
+    @media (min-width: 1300px) {
+      padding: 4rem;
+    }
+
+    h2 {
+      color: $color--complement-3;
+      font-weight: 800;
+      font-size: 20px;
+      @media (min-width: 800px) {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+    strong {
+      color: $color--complement-3;
+    }
+  }
+
+  .about-img {
+    object-fit: cover;
+    max-height: 1000px;
+    @media (min-width: 800px) {
+      grid-row: 1;
+      max-width: 90%;
+    }
+  }
+}

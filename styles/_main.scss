@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font--main;
+  background: $color--section-background;
+  color: $color--main-font;
+  font-size: 16px;
+  margin: 0;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+button {
+  text-align: center;
+  text-decoration: none;
+  background-color: $color--complement-2;
+  color: $color--complement-1;
+  border: 1px solid $color--complement-1;
+  border-radius: 10px;
+  padding: 6px 20px;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color--complement-1;
+    color: $color--complement-2;
+  }
+}
